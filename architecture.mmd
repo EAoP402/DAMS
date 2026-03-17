@@ -1,0 +1,7 @@
+flowchart LR
+    A[Data Sources\nACAS / SIEM / CMDB / Logs / Threat Intel] --> B[Control Mapping Engine]
+    B --> C[DAMS Index Engine]
+    C --> D[Dashboard & Reporting Layer]
+    D --> E[AI Intelligence Layer]
+    A --> F[ServiceNow Integration Layer]
+    F --> B

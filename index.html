@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAMS Accelerator Overview</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Digital Accelerator Metrics System</p>
+      <h1>DAMS</h1>
+      <p class="subtitle">
+        System-level view of accelerator progress, control coverage, and completed controls.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">System Selection</p>
+          <h2>Choose a system</h2>
+        </div>
+        <div class="summary-chip">
+          <span class="summary-label">Active system</span>
+          <strong id="activeSystemName">System 1</strong>
+        </div>
+      </div>
+
+      <div class="system-toggle" role="tablist" aria-label="System selector">
+        <button class="system-btn active" data-system="system1" aria-pressed="true">
+          <span class="system-title">System 1</span>
+          <span class="system-meta"><strong>12</strong> controls completed</span>
+        </button>
+
+        <button class="system-btn" data-system="system2" aria-pressed="false">
+          <span class="system-title">System 2</span>
+          <span class="system-meta"><strong>18</strong> controls completed</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Accelerator Breakdown</p>
+          <h2>DAMS accelerators</h2>
+        </div>
+        <p class="section-copy">
+          Click an accelerator to view controls. Everest now includes a detailed Zero Trust control list with completed items highlighted in green.
+        </p>
+      </div>
+
+      <div class="accelerator-grid">
+        <article class="accelerator-card" data-accelerator="everest">
+          <div class="accelerator-main">
+            <span class="domain-tag">CYBER</span>
+            <h3>Everest</h3>
+            <p>Zero Trust</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">24</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="12" data-system2="18">12</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="eclipse">
+          <div class="accelerator-main">
+            <span class="domain-tag">CYBER</span>
+            <h3>Eclipse</h3>
+            <p>Defensive Cyber</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">38</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="10" data-system2="16">10</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="venin">
+          <div class="accelerator-main">
+            <span class="domain-tag">CYBER</span>
+            <h3>VENIN</h3>
+            <p>Full-Spectrum Cyber</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">41</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="9" data-system2="14">9</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="tidal">
+          <div class="accelerator-main">
+            <span class="domain-tag">CYBER</span>
+            <h3>TIDAL</h3>
+            <p>Post-Quantum Cryptography</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">22</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="6" data-system2="11">6</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="luna">
+          <div class="accelerator-main">
+            <span class="domain-tag">ARTIFICIAL INTELLIGENCE</span>
+            <h3>Luna AI</h3>
+            <p>Adaptable AI capabilities</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">30</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="8" data-system2="14">8</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="hive">
+          <div class="accelerator-main">
+            <span class="domain-tag">CLOUD</span>
+            <h3>Hive</h3>
+            <p>Hybrid Multi-Cloud</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">35</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="11" data-system2="19">11</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="cove">
+          <div class="accelerator-main">
+            <span class="domain-tag">ARTIFICIAL INTELLIGENCE</span>
+            <h3>Cove AI</h3>
+            <p>AI Operations</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">28</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="7" data-system2="13">7</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="coral">
+          <div class="accelerator-main">
+            <span class="domain-tag">APPLICATION SERVICES</span>
+            <h3>Coral</h3>
+            <p>Software Factory</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">32</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="9" data-system2="17">9</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="ember">
+          <div class="accelerator-main">
+            <span class="domain-tag">DIGITAL MODERNIZATION</span>
+            <h3>Ember</h3>
+            <p>Digital Engineering</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">27</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="6" data-system2="12">6</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="accelerator-card" data-accelerator="comet">
+          <div class="accelerator-main">
+            <span class="domain-tag">ADVANCED WIRELESS</span>
+            <h3>Comet 5G</h3>
+            <p>Secure 5G / Edge</p>
+          </div>
+          <div class="accelerator-stats">
+            <div class="stat-pill">
+              <span class="stat-label">Controls</span>
+              <strong class="total-controls">25</strong>
+            </div>
+            <div class="stat-pill stat-pill-complete">
+              <span class="stat-label">Completed</span>
+              <strong class="completed-controls" data-system1="5" data-system2="11">5</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel panel-compact">
+      <div class="totals-bar">
+        <div class="totals-card">
+          <span class="totals-label">Total mapped controls</span>
+          <strong id="mappedControls">302</strong>
+        </div>
+        <div class="totals-card totals-card-highlight">
+          <span class="totals-label">Total completed controls</span>
+          <strong id="completedControls">83</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel detail-panel">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Accelerator Detail</p>
+          <h2 id="detailTitle">Accelerator Controls</h2>
+        </div>
+        <p class="section-copy" id="detailSubtitle">
+          Click any accelerator card to load its control list. Completed controls for the selected system are highlighted in green.
+        </p>
+      </div>
+
+      <div id="acceleratorDetail"><div class="placeholder-box">Click an accelerator box above to display its controls.</div></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
